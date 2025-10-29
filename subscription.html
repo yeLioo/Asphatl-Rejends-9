@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="subscription.css">
+</head>
+
+
+<body>
+    <div class="subscription-form">
+        <div class="form-container">
+            <button class="close-button"><a href="home.html">X</a></button>
+            <p class="heading">WANT TO BE A PART OF ASPHATL CONTENT CREATOR OR VIEWER?</p>
+            <div class="form-content">
+                <div class="form-inputs">
+                    <form>
+                        <input id="username" type="text" placeholder="USERNAME" required>
+                        <input id="email" type="email" placeholder="EMAIL" required>
+                        <input id="date" type="date" placeholder="DATE OF BIRTH" required>
+                        <label for="GENDER">I AM A </label>
+                        <select name="GENDER" id="gender">
+                            <option value="default">ENTER GENDER</option>
+                            <option value="male">MALE</option>
+                            <option value="female">FEMALE</option>
+                        </select>
+                        <div class="terms">
+                            <input id="tnc" type="checkbox" required>
+                            <label>I AGREE TO THE TERMS AND CONDITIONS</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-text">
+                    <div class = "text">
+                        SUBSCRIBE AND WE'LL KEEP YOU UPDATED
+                    </div>
+                    <div class="sign-up">
+                        <button type="submit" onclick="validate()">SIGN ME UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="subscription.js"></script>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.cdnfonts.com/css/jockey-one');
+@import url('https://fonts.cdnfonts.com/css/krona-one');
+@import url('https://fonts.cdnfonts.com/css/lexend-mega');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #E49D9D;
+}
+
+.top-page{
+    top: 0;
+    left: 0;
+    background-image: url('Assets/BannerGallery.png');
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    margin-top: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 5vw; */
+}
+
+.overlay{
+    opacity: 1;
+    /* background-color: rgb(0,0,0,0.5); */
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-page:hover .overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.5);
+}
+.overlay .text{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.text h1{
+    color: #FFF;
+    width: 50%;
+    font-size: 56px;
+    font-family: 'Krona One';
+}
+
+.top-page .right-img{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay .right-img img{
+    width: 40vw;
+}
+
+.nav{
+    top: 0;
+    left: 0;
+    position: fixed;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0vh 2vw;
+    background-color: rgb(228, 157, 157, 0.35);
+    z-index: 2000;
+}
+
+.nav-fill{
+    display: flex;
+    align-items: center;
+}
+
+.nav-fill .logo{
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+.nav-fill .logo img{
+    width: 250px;
+    align-self: center;
+}
+
+.nav-fill .links ul{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+.nav-fill .links ul li{
+    list-style-type: none;
+}
+
+.nav-fill .links ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Jockey One';
+    transition: opacity 0.2s ease-in;
+}
+
+.nav-fill .links ul li a:hover{
+    opacity: 0.6;
+}
+
+#active{
+    color: #E49D9D;
+    text-decoration: underline;
+}
+
+.subscription a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #E49D9D;
+    padding: 1.5vh 2vw;
+    border-radius: 15px;
+    font-family: 'Jockey One';
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.subscription a:hover{
+    background-color: #FFF;
+    color: #E49D9D;
+}
+
+.gallery-main{
+    max-width: 100vw;
+    padding: 2vw 2vw;
+    background-image: url('Assets/WallpaperGallery.png');
+}
+
+.gallery-main .tier-title{
+    color: #FFF;
+    font-family: 'Krona One';
+    margin-bottom: 2vw;
+}
+
+.tier-title h1{
+    font-size: 56px;
+}
+
+.gallery-main .car-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 2vw;
+}
+
+.car-list{
+    max-width: 40vw;
+}
+
+.gallery-main .car-list img{
+    width: 40vw;
+}
+
+.car-list h3{
+    font-size: 25px;
+    font-family: 'Lexend Mega';
+    color: #FFF;
+    max-width: 65%;
+    text-align: center;
+    margin: auto;
+}
+
+.footer{
+    width: 100vw;
+    background-color: #E49D9D;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jockey One';
+    color: #FFF;
+    font-weight: 100;
+    z-index: 2000;
+}
+
+.footer .top{
+    margin-bottom: 2vh;
+}
+
+.footer .sosmed{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+
+}

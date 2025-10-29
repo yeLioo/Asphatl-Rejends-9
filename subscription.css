@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/jockey-one');
+@import url('https://fonts.cdnfonts.com/css/krona-one');
+@import url('https://fonts.cdnfonts.com/css/lexend-mega');
+
+body{
+    top: 0;
+    left: 0;
+    background-image: url('Assets/BG1.png');
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.subscription-form {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    background-color: #E49D9D;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-inputs {
+    width: 50%;
+    padding-right: 5vh;
+}
+
+.form-inputs input{
+    font-family: 'Jockey One';
+}
+
+.form-inputs label{
+    font-family: 'Jockey One';
+    color: #fff;
+}
+
+.form-inputs select{
+    padding: 0 1vw;
+    font-family: 'Jockey One';
+}
+
+.form-text {
+    width: 45%;
+    text-align: left;
+    margin-left: 2vh;
+    font-family: 'Krona One';
+    font-size: 30px;
+    color: white;
+}
+
+.form-text .p{
+    padding: 0;
+}
+
+.heading {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Jockey One';
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 1vh 3vh;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #E49D9D;
+}
+
+.trailer-card1,
+.trailer-card2,
+.trailer-card3 {
+    width: 30%;
+    height: 100vh;
+    position: relative;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+.btn {
+    position: absolute;
+}
+
+

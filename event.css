@@ -1,0 +1,333 @@
+@import url('https://fonts.cdnfonts.com/css/jockey-one');
+@import url('https://fonts.cdnfonts.com/css/krona-one');
+@import url('https://fonts.cdnfonts.com/css/lexend-mega');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #E49D9D;
+}
+
+.top-page{
+    top: 0;
+    left: 0;
+    background-image: url('Assets/BannerEvent.png');
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    margin-top: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 5vw; */
+}
+
+.event-trailer{
+    top: 0;
+    left: 0;
+    background-image: url('Assets/BannerEvent2.png');
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.overlay{
+    opacity: 1;
+    /* background-color: rgb(0,0,0,0.5); */
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer-gallery{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.trailer-gallery button{
+    font-family: 'Jockey One';
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+#trailer-card1{
+    background-image: url('Assets/summer_speed_fest_1.png');
+    width: 25vw;
+    height: 30vw;
+    margin-right: 5vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#trailer-card2{
+    background-image: url('Assets/summer_speed_fest_2.png');
+    width: 25vw;
+    height: 30vw;
+    margin-right: 5vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#trailer-card3{
+    background-image: url('Assets/summer_speed_fest_3.png');
+    width: 25vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.top-page:hover .overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.5);
+}
+.overlay .text{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.text h1{
+    color: #FFF;
+    width: 100%;
+    font-size: 56px;
+    letter-spacing: 5px;
+    font-family: 'Krona One';
+}
+
+.title h1{
+    color: #FFF;
+    width: 100%;
+    font-size: 56px;
+    letter-spacing: 5px;
+    font-family: 'Krona One';
+}
+
+
+.title{
+    margin-left: 20vh;
+    margin-top: 10vh;
+}
+
+.top-page .right-img {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay .right-img img{
+    width: 40vw;
+}
+
+button{
+    padding: 1vh 3vh;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #E49D9D;
+}
+
+.nav{
+    top: 0;
+    left: 0;
+    position: fixed;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0vh 2vw;
+    background-color: rgb(228, 157, 157, 0.35);
+    z-index: 2000;
+}
+
+.nav-fill{
+    display: flex;
+    align-items: center;
+}
+
+.nav-fill .logo{
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+.nav-fill .logo img{
+    width: 250px;
+    align-self: center;
+}
+
+.nav-fill .links ul{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+.nav-fill .links ul li{
+    list-style-type: none;
+}
+
+.nav-fill .links ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Jockey One';
+    transition: opacity 0.2s ease-in;
+}
+
+.nav-fill .links ul li a:hover{
+    opacity: 0.6;
+}
+
+#active{
+    color: #E49D9D;
+    text-decoration: underline;
+}
+
+.subscription a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #E49D9D;
+    padding: 1.5vh 2vw;
+    border-radius: 15px;
+    font-family: 'Jockey One';
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.subscription a:hover{
+    background-color: #FFF;
+    color: #E49D9D;
+}
+
+
+
+.footer{
+    width: 100vw;
+    background-color: #E49D9D;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jockey One';
+    color: #FFF;
+    font-weight: 100;
+    z-index: 2000;
+}
+
+.footer .top{
+    margin-bottom: 2vh;
+}
+
+.footer .sosmed{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #E49D9D;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 5vh;
+    margin: 3vh;
+    border-radius: 10px;
+    width: 30vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #E49D9D;
+    text-align: center;
+    font-family: 'Jockey One';
+}
+
+.stat-value {
+font-size: 40px;
+    margin-bottom: 5px;
+    color: #E49D9D;
+    text-align: center;
+    font-family: 'Jockey One';
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sponsors img {
+    margin: 10px;
+    height: 50px;
+}
+
+.container h1, h2{
+    text-align: center;
+    color: #FFF;
+    font-size: 56px;
+    letter-spacing: 5px;
+    font-family: 'Krona One';
+}
+
+
+.head-container{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+

@@ -1,0 +1,233 @@
+@import url('https://fonts.cdnfonts.com/css/jockey-one');
+@import url('https://fonts.cdnfonts.com/css/krona-one');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #E49D9D;
+}
+
+.banner{
+    top: 0;
+    left: 0;
+    background-image: url('Assets/BG1.png');
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    margin-top: -10vh;
+}
+
+.banner::before{
+    opacity: 0;
+    background-color: rgb(0,0,0,0.5);
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.banner:hover.banner::before{
+    opacity: 1;
+}
+
+.nav{
+    top: 0;
+    left: 0;
+    position: fixed;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0vh 2vw;
+    background-color: rgb(228, 157, 157, 0.35);
+    z-index: 2000;
+}
+
+.nav-fill{
+    display: flex;
+    align-items: center;
+}
+
+.nav-fill .logo{
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+.nav-fill .logo img{
+    width: 250px;
+    align-self: center;
+}
+
+.nav-fill .links ul{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+.nav-fill .links ul li{
+    list-style-type: none;
+}
+
+.nav-fill .links ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Jockey One';
+    transition: opacity 0.2s ease-in;
+}
+
+.nav-fill .links ul li a:hover{
+    opacity: 0.6;
+}
+
+#active{
+    color: #E49D9D;
+    text-decoration: underline;
+}
+
+.subscription a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #E49D9D;
+    padding: 1.5vh 2vw;
+    border-radius: 15px;
+    font-family: 'Jockey One';
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.subscription a:hover{
+    background-color: #FFF;
+    color: #E49D9D;
+}
+
+.fill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.fill a{
+    text-decoration: none;
+}
+
+.fill h1{
+    font-family: 'Krona One';
+    text-align: center;
+    font-size: 56px;
+    width: 20vw;
+    color: #FFF;
+    border-bottom: 5px solid #FFF;
+}
+
+.about-us{
+    position: relative;
+    background-image: url('Assets/BG2.png');
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.about-us::before{
+    background-color: rgb(0,0,0,0.5);
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transition: 0.5s opacity ease;
+}
+
+.about-us:hover.about-us::before{
+    opacity: 1;
+}
+
+.about-us .text{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid #FFF;
+    margin-bottom: 5vh;
+}
+
+.text .title h1{
+    color: #FFF;
+    width: 100%;
+    font-size: 48px;
+    font-family: 'Krona One';
+
+}
+
+.text .desc{
+    width: 50%;
+    margin-bottom: 7vh;
+}
+
+.text .desc p{
+    color: #FFF;
+    text-align: left;
+    /* opacity: 0; */
+    font-size: 24px;
+    font-family: 'Jockey One';
+}
+
+.text .button a{
+    background-color: #E49D9D;
+    padding: 2vh 2vw;
+    border-radius: 15px;
+    width: 50%;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Jockey One';
+}
+
+.footer{
+    background-color: #E49D9D;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jockey One';
+    color: #FFF;
+    font-weight: 100;
+}
+
+.footer .top{
+    margin-bottom: 2vh;
+}
+
+.footer .socmed{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+
+}

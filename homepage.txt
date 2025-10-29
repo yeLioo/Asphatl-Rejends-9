@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-fill">
+            <div class="logo">
+                <img src="Assets/LogoAsphalt.png" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="home.html" id="active">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscription">
+            <a href="subscription.html">SUBSCRIPTION</a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="fill">
+            <a href="#about-us">
+                <h1>BORN TO THRILL.</h1>
+            </a>
+        </div>
+    </div>
+    <div class="about-us" id="about-us">
+        <div class="text">
+            <div class="title">
+                <h1>ABOUT</h1>
+                <h1>US</h1>
+            </div>
+            <div class="desc">
+                <p>Taking places as in real-life locations, in Asphatl 9:
+                    in Asphatl 9: Rejends, you will aim to win races
+                    with your prestigious car!
+                </p>
+            </div>
+            <div class="button">
+                <a href="subscription.html">LET'S START SUBSCRIPTION</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="top">
+            <h1>STAY TUNED!</h1>
+        </div>
+        <div class="socmed">
+            <a href="https://www.instagram.com/mayriel_iyel/?hl=en"><img src="Assets/IG.png" alt=""></a>
+            <img src="Assets/twitter.png" alt="" id="socmed2">
+            <img src="Assets/YouTube.png" alt="" id="socmed3">
+            <img src="Assets/Twitch.png" alt="" id="socmed4">
+        </div>
+        <div class="logo">
+            <img src="Assets/LogoAsphalt.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
